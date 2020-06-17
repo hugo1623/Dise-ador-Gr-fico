@@ -7,24 +7,24 @@ body {
 
 @media screen and (min-width: 480px) {
     body {
-        background: red;
+        background: #233D58;
     }
 }
 
 @media screen and (min-width: 600px) {
     body {
-        background: orange;
+        background: #233D58;
     }
 }
 
 @media screen and (min-width: 767px) {
     body {
-        background: yellow;
+        background: #233D58;
     }
 }
 
 @media screen and (min-width: 950px) {
     body {
-        background: green;
+        background: #233D58;
     }
 }
