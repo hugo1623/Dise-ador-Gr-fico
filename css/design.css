@@ -30,6 +30,7 @@
         }
         
         header nav #card_menu {
+            /* display: none; */
             position: relative;
             width: 250px;
             background: white;
@@ -141,6 +142,44 @@
             }
             header h1 figure img {
                 width: 100%;
+            }
+            header nav {
+                display: inline-block;
+                vertical-align: middle;
+                width: 62%;
+                position: relative;
+            }
+            header nav #showMenu,
+            header nav #hideMenu {
+                display: none;
+            }
+            header nav #card_menu {
+                display: inline-block;
+                border: none;
+                background: none;
+                position: relative;
+                top: 0px;
+                width: 100%;
+                text-align: right;
+                padding-bottom: 0px;
+            }
+            header nav #card_menu figure {
+                display: none;
+            }
+            header nav #card_menu ul {
+                padding: 0px;
+                margin: 0px;
+                margin-top: -15px;
+            }
+            header nav #card_menu ul li {
+                display: inline-block;
+                width: 75px;
+                text-align: center;
+                font-size: 1.2em;
+                margin: 0px -2px;
+            }
+            header nav #card_menu ul li a {
+                color: white;
             }
             header #prev_section,
             header #next_section {
