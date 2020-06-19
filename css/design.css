@@ -99,6 +99,45 @@
             transform: rotate(180deg);
         }
         
+        #slider {
+            width: 100%;
+            position: relative;
+            height: 600px;
+            background: black;
+        }
+        
+        #slider section.slide {
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+        }
+        
+        #slider #home {
+            height: 500px;
+            background: orange;
+        }
+        
+        #slider #aboutme {
+            height: 400px;
+            background: red;
+        }
+        
+        #slider #skills {
+            height: 300px;
+            background: mediumseagreen;
+        }
+        
+        #slider #portfolio {
+            height: 200px;
+            background: darkmagenta;
+        }
+        
+        #slider #blog {
+            height: 100px;
+            background: cornflowerblue;
+        }
+        
         @media screen and (min-width: 480px) {
             body {
                 background: #233D58;
