@@ -58,6 +58,29 @@
         <section class="slide" id="portfolio" style="display:none"></section>
         <section class="slide" id="blog" style="display:none"></section>
     </div>
+
+    <!--  -->
+    <div id="contact_form">
+        <form action="contact.php" id="form1" name="form1" method="post">
+            <div id="close_form"></div>
+            <!-- onClick="displayFormContact('none')" -->
+            <figure id="logo_mensaje"><img src="iconos/icon-17.png" alt=""></figure>
+
+            <p>Dí Hola!</p>
+
+            <input type="text" id="name" name="name" placeholder="Tu nombre" onfocus="if(this.placeholder =='')this.placeholder ='Tu nombre'" />
+
+            <input type="text" id="email" name="email" placeholder="Tu email" onfocus="if(this.placeholder =='')this.placeholder ='Tu email'" />
+
+            <textarea name="message" id="message" type="text" placeholder="Mensaje" onfocus="if(this.placeholder =='')this.placeholder ='Mensaje'"></textarea>
+
+            <input type="submit" name="Submit" id="button" value="ENVIAR" />
+
+        </form>
+    </div>
+
+    <!--  -->
+
     <script>
         var sections = new Array(5);
         sections[0] = "home";
