@@ -40,7 +40,7 @@
                     <li><a onclick="navSection('skills')" href="#">Skills</a> </li>
                     <li><a onclick="navSection('portfolio')" href="#">Portfolio</a> </li>
                     <li><a onclick="navSection('blog')" href="#">Blog</a> </li>
-                    <li><a href="#">Contacto</a> </li>
+                    <li><a onclick="displayFormContact('block')" href="#">Contacto</a> </li>
                 </ul>
 
             </div>
@@ -62,8 +62,8 @@
     <!--  -->
     <div id="contact_form">
         <form action="contact.php" id="form1" name="form1" method="post">
-            <div id="close_form"></div>
-            <!-- onClick="displayFormContact('none')" -->
+            <div id="close_form" onClick="displayFormContact('none')"></div>
+
             <figure id="logo_mensaje"><img src="iconos/icon-17.png" alt=""></figure>
 
             <p>Dí Hola!</p>
@@ -78,8 +78,9 @@
 
         </form>
     </div>
+    <div id="contact_button" onclick="displayFormContact('block')"></div>
 
-    <!--  -->
+
 
     <script>
         var sections = new Array(5);
@@ -190,6 +191,12 @@
                 }
             }
             setColors(i);
+        }
+
+        function displayFormContact(status) {
+            var form = document.getElementById("contact_form");
+            form.style.display = status;
+
         }
     </script>
 </body>
