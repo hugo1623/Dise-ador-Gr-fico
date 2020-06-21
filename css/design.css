@@ -104,7 +104,6 @@
             width: 100%;
             position: relative;
             height: 600px;
-            background: black;
         }
         
         #slider section.slide {
@@ -115,8 +114,50 @@
         }
         
         #slider #home {
-            height: 500px;
-            background: orange;
+            background: #233D58;
+            font-family: "aller";
+            position: relative;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        
+        #slider #home .mainanimation {
+            background: red;
+            width: 80%;
+            position: absolute;
+            margin-left: 10%;
+            min-height: 300px;
+        }
+        
+        #slider #home .mainlogo {
+            background: none;
+            position: relative;
+            background: seagreen;
+            width: 60vw;
+            margin-left: 20vw;
+            min-height: 430px;
+            /* background: rgba(35,61,88,0.8); */
+        }
+        
+        #slider #home .mainlogo h2 {
+            font-size: 1.2em;
+            padding-top: 80px;
+            color: white;
+            font-weight: lighter;
+            /* position: relative;
+            text-align: center; */
+        }
+        
+        #slider #home .mainlogo strong {
+            font-family: "aldo";
+            font-size: 2em;
+            display: block;
+        }
+        
+        #slider #home .mainlogo figure,
+        #slider #home .mainlogo figure img {
+            width: 100%;
+            margin: 0px;
         }
         
         #slider #aboutme {
@@ -243,8 +284,13 @@
         }
         
         @media screen and (min-width: 480px) {
-            body {
-                background: #233D58;
+            #slider #home .mainlogo {
+                width: 270px;
+                left: 50%;
+                margin-left: -135px;
+            }
+            #slider #home .mainlogo h2 {
+                font-size: 1.4em;
             }
         }
         
